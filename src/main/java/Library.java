@@ -2,8 +2,8 @@
 
 public class Library {
 
-    public ArrayList<Book> libraryBooks;
-    public int libraryShelfSpace;
+    private ArrayList<Book> libraryBooks;
+    private int libraryShelfSpace;
 
     public Library(int libraryShelfSpace) {
         this.libraryBooks = new ArrayList<>();
