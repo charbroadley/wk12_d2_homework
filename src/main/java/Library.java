@@ -5,8 +5,8 @@ public class Library {
     private ArrayList<Book> libraryBooks;
     private int libraryShelfSpace;
 
-    public Library(int libraryShelfSpace) {
-        this.libraryBooks = new ArrayList<>();
+    public Library(ArrayList<Book> libraryBooks, int libraryShelfSpace) {
+        this.libraryBooks = libraryBooks;
         this.libraryShelfSpace = libraryShelfSpace;
     }
 
