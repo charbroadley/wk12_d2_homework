@@ -14,8 +14,17 @@ public class Library {
         return this.libraryBooks.size();
     }
 
+    // Instead of doing capacity logic in addBook could at it as a separate function and then call that function:
+    public boolean hasCapacity() {
+        return libraryShelfSpace > libraryBooks.size();
+    }
+
     public void addBook(Book book) {
+        // if(hasCapacity()){
+        // this.libraryBooks.add(book);}
         if (this.libraryBooks.size() < this.libraryShelfSpace){
         this.libraryBooks.add(book);}
     }
 }
+
+// Borrower arrayList for their borrowed books set up in the same way as libraryBooks
